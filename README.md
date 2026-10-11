@@ -1,8 +1,19 @@
 # Audio Effects Physical Modeling Engine
 
-Research and plans for a modular audio effects engine combining physical models, virtual analog modelling and signal DSP. The documentation is organised around deriving, implementing and validating each mathematical model.
+A C++20 modular audio effects engine combining physical models, virtual analog modelling and signal DSP, with research and executable validation. The documentation is organised around deriving, implementing and validating each mathematical model.
 
-**Status:** planning documented; the C++ engine is not yet implemented. Coverage includes 32 effect families, 8 mathematical foundations, 17 implementation phases, 51 bibliography entries and 23 software/documentation entries. Some entries reference chapters or documentation within the same project; these are not 74 independent publications/products.
+**Status:** v0.1 implements a real-time mono/stereo core, graph, WAV renderer and baselines for all 32 effect families. Device-specific physical extensions and plug-in wrappers remain planned. See the [implementation report and coverage matrix](docs/implementation/README.md). Coverage includes 32 effect families, 8 mathematical foundations, 17 implementation phases, 51 bibliography entries and 23 software/documentation entries. Some entries reference chapters or documentation within the same project; these are not 74 independent publications/products.
+
+## Build and run
+
+```bash
+cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
+cmake --build build --config Release --parallel 2
+ctest --test-dir build -C Release --output-on-failure
+build/audiofx-render --family diode --drive 4 --oversampling 4 --mix 1 --signal music --seconds 4 --output diode.wav
+```
+
+The C++ library has no external dependencies. `make test` additionally runs independent NumPy/SciPy comparisons after installing the verification requirements below. [API contracts, all models, mathematical choices and measured limitations](docs/implementation/README.md).
 
 ## Start here
 

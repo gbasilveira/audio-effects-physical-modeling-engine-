@@ -2,7 +2,7 @@
 
 ## Research, mathematical specification and implementation plans
 
-**Prepared for Guilherme da Silveira · 11 October 2026 · Version 1.1**
+**Prepared for Guilherme da Silveira · 11 October 2026 · Version 1.2**
 
 **Scope:** a modular, real-time audio effects engine covering physical models, virtual analog models and signal-processing effects. This self-contained study and implementation document provides 32 component/family plans, shared mathematical foundations, implementation phases, acceptance criteria and an annotated bibliography.
 
@@ -1243,4 +1243,4 @@ python docs/plan/verification/check_plan.py
 
 The same script generates these plots: EQ response, total FDN energy, a damped mode and RC clipper voltage. All data are synthetic model outputs. To deepen understanding, change one parameter, first write an analytic prediction, rerun and explain deviations. Then add the continuous-time reference, identification and RT tests prescribed by the component plan.
 
-**Delivery status:** research and plans available; selected numerical checks executed with saved results. Engine implementation phases and product acceptance gates remain pending in the YAML.
+**Delivery status:** research and plans available; v0.1 now implements the core and all 32 family baselines, with compiled tests and independent numerical comparisons. See the [implementation report](../implementation/README.md) for exact coverage and remaining variants. YAML statuses distinguish the delivered core from unfinished physical extensions and product gates.

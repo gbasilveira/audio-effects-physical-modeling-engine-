@@ -1,6 +1,6 @@
 schema_version: 1
 language: en-GB
-status_note: Research delivered; implementation phases remain pending.
+status_note: v0.1 core and 32 family baselines delivered; advanced variants and product acceptance remain in progress. See docs/implementation/README.md.
 common_model_artifacts:
 - derivation
 - discretization
@@ -11,7 +11,7 @@ common_model_artifacts:
 phases:
 - id: P00
   title: Conventions and corpus
-  status: pending
+  status: completed
   depends_on: []
   components: []
   deliverables:
@@ -21,7 +21,7 @@ phases:
   exit_gate: Every parameter has units, range and physical or DSP meaning
 - id: P01
   title: Core and graphs
-  status: pending
+  status: completed
   depends_on:
   - P00
   components: []
@@ -32,7 +32,7 @@ phases:
   exit_gate: Block partition equivalence; no callback allocation or locks
 - id: P02
   title: Filters and control
-  status: pending
+  status: in_progress
   depends_on:
   - P00
   components: []
@@ -43,7 +43,7 @@ phases:
   exit_gate: Analytical response agreement and bounded states in approved domain
 - id: P03
   title: Delays and resampling
-  status: pending
+  status: in_progress
   depends_on:
   - P01
   components: []
@@ -54,7 +54,7 @@ phases:
   exit_gate: Measured interpolation error and causal safe buffer access
 - id: P04
   title: Circuits and antialiasing
-  status: pending
+  status: in_progress
   depends_on:
   - P01
   - P02
@@ -66,7 +66,7 @@ phases:
   exit_gate: Independent circuit comparison, convergence and alias measurements
 - id: P05
   title: Modes and acoustic networks
-  status: pending
+  status: in_progress
   depends_on:
   - P01
   - P02
@@ -79,7 +79,7 @@ phases:
   exit_gate: Pole agreement, passive energy accounting and decay verification
 - id: P06
   title: FFT, convolution and STFT
-  status: pending
+  status: in_progress
   depends_on:
   - P01
   components: []
@@ -90,7 +90,7 @@ phases:
   exit_gate: Direct FIR equivalence and finite-signal STFT reconstruction
 - id: P07
   title: Temporal modulation
-  status: pending
+  status: in_progress
   depends_on:
   - P02
   - P03
@@ -111,7 +111,7 @@ phases:
   exit_gate: Comb, sidebands, read trajectories and sample-rate changes explained
 - id: P08
   title: Musical filters
-  status: pending
+  status: in_progress
   depends_on:
   - P02
   - P04
@@ -125,7 +125,7 @@ phases:
   exit_gate: Static curves plus time-varying controls; circuit loading validated
 - id: P09
   title: Dynamics
-  status: pending
+  status: in_progress
   depends_on:
   - P02
   - P04
@@ -142,7 +142,7 @@ phases:
   exit_gate: Static curve and transient agreement using consistent time definitions
 - id: P10
   title: Nonlinearity and amplification
-  status: pending
+  status: in_progress
   depends_on:
   - P04
   - P08
@@ -157,7 +157,7 @@ phases:
   exit_gate: Harmonics, IMD, memory and electroacoustic response across levels
 - id: P11
   title: Tape and BBD
-  status: pending
+  status: in_progress
   depends_on:
   - P03
   - P04
@@ -172,7 +172,7 @@ phases:
   exit_gate: Separate clock/transport, saturation and filtering error budgets
 - id: P12
   title: Reverberation
-  status: pending
+  status: in_progress
   depends_on:
   - P05
   - P06
@@ -189,7 +189,7 @@ phases:
   exit_gate: Band decay, early reflections, modal convergence and physical units
 - id: P13
   title: Space and resonators
-  status: pending
+  status: in_progress
   depends_on:
   - P05
   - P06
@@ -205,7 +205,7 @@ phases:
   exit_gate: Motion, symmetry, mode weights and energy validated
 - id: P14
   title: Pitch, source–filter and spectrum
-  status: pending
+  status: in_progress
   depends_on:
   - P03
   - P06
@@ -222,7 +222,7 @@ phases:
   exit_gate: Reconstruction, transients, latency and out-of-domain artifacts documented
 - id: P15
   title: Composition and identification
-  status: pending
+  status: in_progress
   depends_on:
   - P09
   - P10
@@ -239,7 +239,7 @@ phases:
   exit_gate: Generalization across held-out levels, controls and sample rates
 - id: P16
   title: Integration and release
-  status: pending
+  status: in_progress
   depends_on:
   - P15
   components: []
