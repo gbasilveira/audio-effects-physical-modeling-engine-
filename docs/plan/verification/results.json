@@ -1,0 +1,118 @@
+{
+  "seed": 74031,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "matplotlib": "3.10.8",
+  "checks": [
+    {
+      "name": "RBJ center and endpoints",
+      "passed": true,
+      "metrics": {
+        "max_error_db": 6.797544311707522e-11,
+        "cases": 81
+      },
+      "scope": "81 static designs, three sample rates; no automation test"
+    },
+    {
+      "name": "TPT SVF versus bilinear",
+      "passed": true,
+      "metrics": {
+        "max_relative_l2": 1.842144566893402e-12,
+        "cases": 9
+      },
+      "scope": "LP output, fixed coefficients, independent transfer-function oracle"
+    },
+    {
+      "name": "WDF RC versus bilinear",
+      "passed": true,
+      "metrics": {
+        "max_abs_volt": 6.661338147750939e-16
+      },
+      "scope": "Linear capacitor reflection sign and port resistance; not arbitrary WDF topology"
+    },
+    {
+      "name": "Feedback delay T60",
+      "passed": true,
+      "metrics": {
+        "drop_at_one_second_db": -60.00000000000001,
+        "loop_gain": 0.5011872336272722
+      },
+      "scope": "Fixed integer delay 0.1 s, broadband scalar damping"
+    },
+    {
+      "name": "Frozen flanger nulls",
+      "passed": true,
+      "metrics": {
+        "max_magnitude_at_nulls": 8.092838833249653e-15
+      },
+      "scope": "Equal dry/wet, positive feedforward, integer delay 48 samples; no modulation"
+    },
+    {
+      "name": "FDN buffer energy",
+      "passed": true,
+      "metrics": {
+        "lossless_relative_drift": 3.3306690738754696e-16,
+        "max_damped_energy_step": -1.016373737835986e-08
+      },
+      "scope": "Four fixed delay lines and orthogonal mixing; does not cover modulated or nonlinear feedback"
+    },
+    {
+      "name": "Modal exact step and energy",
+      "passed": true,
+      "metrics": {
+        "max_abs_displacement": 8.559819519859957e-14,
+        "max_relative_energy_step": -1.4661321287161301e-07
+      },
+      "scope": "Unforced damped oscillator, positive mass and damping"
+    },
+    {
+      "name": "Plate mass and scaling",
+      "passed": true,
+      "metrics": {
+        "mass_quadrature_kg": 1.9500000000000002,
+        "mass_formula_kg": 1.95,
+        "thickness_ratio": 2.0,
+        "size_ratio": 0.25
+      },
+      "scope": "Thin simply supported isotropic plate, zero tension; not free or clamped boundaries"
+    },
+    {
+      "name": "Diode implicit root",
+      "passed": true,
+      "metrics": {
+        "max_newton_brent_volt": 9.728050309742997e-11,
+        "max_residual_ampere": 9.924377400612194e-14,
+        "max_iterations": 10
+      },
+      "scope": "One synthetic signal, backward Euler scalar equation; no hardware identification or RT bound claim"
+    },
+    {
+      "name": "ADAA linear limit",
+      "passed": true,
+      "metrics": {
+        "max_abs_error": 1.2434497875801753e-14
+      },
+      "scope": "Demonstrates added averaging in first-order ADAA; does not measure nonlinear alias rejection"
+    },
+    {
+      "name": "FFT overlap-add convolution",
+      "passed": true,
+      "metrics": {
+        "relative_l2": 4.182900661750655e-16
+      },
+      "scope": "Single FIR FFT overlap-add baseline, not a multithreaded partition scheduler"
+    },
+    {
+      "name": "STFT identity",
+      "passed": true,
+      "metrics": {
+        "relative_l2": 1.8908695080525056e-16,
+        "minimum_retained_weight": 1.4999999999999993
+      },
+      "scope": "Static Hann windows, hop 64, finite-signal padding and pointwise normalization"
+    }
+  ],
+  "passed": 12,
+  "total": 12
+}
