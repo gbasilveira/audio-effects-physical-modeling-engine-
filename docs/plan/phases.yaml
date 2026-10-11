@@ -1,0 +1,258 @@
+schema_version: 1
+language: en-GB
+status_note: Research delivered; implementation phases remain pending.
+common_model_artifacts:
+- derivation
+- discretization
+- independent-oracle
+- experiments
+- realtime-implementation
+- limitations-and-provenance
+phases:
+- id: P00
+  title: Conventions and corpus
+  status: pending
+  depends_on: []
+  components: []
+  deliverables:
+  - units-and-level-calibration
+  - deterministic-stimuli
+  - source-manifest
+  exit_gate: Every parameter has units, range and physical or DSP meaning
+- id: P01
+  title: Core and graphs
+  status: pending
+  depends_on:
+  - P00
+  components: []
+  deliverables:
+  - core-api
+  - event-scheduler
+  - latency-and-feedback-contract
+  exit_gate: Block partition equivalence; no callback allocation or locks
+- id: P02
+  title: Filters and control
+  status: pending
+  depends_on:
+  - P00
+  components: []
+  deliverables:
+  - biquad-and-tpt-oracles
+  - envelopes-and-lfo
+  - parameter-smoothing
+  exit_gate: Analytical response agreement and bounded states in approved domain
+- id: P03
+  title: Delays and resampling
+  status: pending
+  depends_on:
+  - P01
+  components: []
+  deliverables:
+  - fractional-delay-oracles
+  - resampler
+  - buffer-boundary-tests
+  exit_gate: Measured interpolation error and causal safe buffer access
+- id: P04
+  title: Circuits and antialiasing
+  status: pending
+  depends_on:
+  - P01
+  - P02
+  components: []
+  deliverables:
+  - mna-wdf-oracles
+  - bounded-nonlinear-solver
+  - adaa-and-oversampling-study
+  exit_gate: Independent circuit comparison, convergence and alias measurements
+- id: P05
+  title: Modes and acoustic networks
+  status: pending
+  depends_on:
+  - P01
+  - P02
+  - P03
+  components: []
+  deliverables:
+  - modal-core
+  - fdn-energy-instrumentation
+  - damping-design
+  exit_gate: Pole agreement, passive energy accounting and decay verification
+- id: P06
+  title: FFT, convolution and STFT
+  status: pending
+  depends_on:
+  - P01
+  components: []
+  deliverables:
+  - fft-fir-oracle
+  - partition-scheduler
+  - stft-reconstruction
+  exit_gate: Direct FIR equivalence and finite-signal STFT reconstruction
+- id: P07
+  title: Temporal modulation
+  status: pending
+  depends_on:
+  - P02
+  - P03
+  components:
+  - FX01
+  - FX04
+  - FX05
+  - FX06
+  - FX07
+  - FX08
+  - FX09
+  - FX26
+  - FX29
+  deliverables:
+  - signal-dsp-baselines
+  - modulation-experiments
+  - buffer-effects
+  exit_gate: Comb, sidebands, read trajectories and sample-rate changes explained
+- id: P08
+  title: Musical filters
+  status: pending
+  depends_on:
+  - P02
+  - P04
+  components:
+  - FX10
+  - FX11
+  deliverables:
+  - musical-filters
+  - tone-stack-circuit
+  - wah-and-ladder
+  exit_gate: Static curves plus time-varying controls; circuit loading validated
+- id: P09
+  title: Dynamics
+  status: pending
+  depends_on:
+  - P02
+  - P04
+  - P08
+  components:
+  - FX12
+  - FX13
+  - FX14
+  - FX15
+  deliverables:
+  - gain-computers
+  - sidechain-designs
+  - opto-and-fet-identification
+  exit_gate: Static curve and transient agreement using consistent time definitions
+- id: P10
+  title: Nonlinearity and amplification
+  status: pending
+  depends_on:
+  - P04
+  - P08
+  components:
+  - FX16
+  - FX17
+  - FX18
+  deliverables:
+  - pedal-models
+  - amp-transformer-sag
+  - speaker-cabinet
+  exit_gate: Harmonics, IMD, memory and electroacoustic response across levels
+- id: P11
+  title: Tape and BBD
+  status: pending
+  depends_on:
+  - P03
+  - P04
+  - P07
+  components:
+  - FX02
+  - FX03
+  deliverables:
+  - tape-transport-hysteresis
+  - clocked-bbd
+  - filter-coupling
+  exit_gate: Separate clock/transport, saturation and filtering error budgets
+- id: P12
+  title: Reverberation
+  status: pending
+  depends_on:
+  - P05
+  - P06
+  components:
+  - FX19
+  - FX20
+  - FX21
+  - FX22
+  - FX23
+  deliverables:
+  - algorithmic-reverb
+  - convolution-reverb
+  - room-plate-spring
+  exit_gate: Band decay, early reflections, modal convergence and physical units
+- id: P13
+  title: Space and resonators
+  status: pending
+  depends_on:
+  - P05
+  - P06
+  - P07
+  - P12
+  components:
+  - FX24
+  - FX30
+  deliverables:
+  - spatial-rendering
+  - rotary-doppler
+  - audio-excited-resonators
+  exit_gate: Motion, symmetry, mode weights and energy validated
+- id: P14
+  title: Pitch, source–filter and spectrum
+  status: pending
+  depends_on:
+  - P03
+  - P06
+  - P07
+  components:
+  - FX25
+  - FX27
+  - FX28
+  - FX31
+  deliverables:
+  - pitch-time-stretch
+  - vocoder-and-talkbox
+  - spectral-and-restoration
+  exit_gate: Reconstruction, transients, latency and out-of-domain artifacts documented
+- id: P15
+  title: Composition and identification
+  status: pending
+  depends_on:
+  - P09
+  - P10
+  - P11
+  - P12
+  - P13
+  - P14
+  components:
+  - FX32
+  deliverables:
+  - hybrid-models
+  - presets-and-provenance
+  - held-out-identification
+  exit_gate: Generalization across held-out levels, controls and sample rates
+- id: P16
+  title: Integration and release
+  status: pending
+  depends_on:
+  - P15
+  components: []
+  deliverables:
+  - host-validation
+  - listening-protocol
+  - cpu-report
+  - license-inventory
+  exit_gate: All applicable gates passed; measured limitations published
+variant_dependencies:
+  FX06.physical:
+  - P04
+  FX08.physical:
+  - P04
+  FX29.physical-media:
+  - P11

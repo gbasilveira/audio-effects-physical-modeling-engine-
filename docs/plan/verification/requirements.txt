@@ -1,0 +1,5 @@
+# Versions used for the checked-in results are recorded in results.json.
+numpy>=1.24,<3
+scipy>=1.10,<2
+matplotlib>=3.7,<4
+PyYAML>=6,<7
