@@ -1,0 +1,220 @@
+{
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "seed": 74031,
+  "sample_rate": 48000,
+  "total": 30,
+  "passed": 30,
+  "checks": [
+    {
+      "name": "EQ at 8000 Hz",
+      "max_absolute_error": 3.3306690738754696e-16,
+      "limit": 1e-10,
+      "scope": "",
+      "passed": true
+    },
+    {
+      "name": "EQ at 44100 Hz",
+      "max_absolute_error": 1.3322676295501878e-15,
+      "limit": 1e-10,
+      "scope": "",
+      "passed": true
+    },
+    {
+      "name": "EQ at 48000 Hz",
+      "max_absolute_error": 1.2906342661267445e-15,
+      "limit": 1e-10,
+      "scope": "",
+      "passed": true
+    },
+    {
+      "name": "EQ at 96000 Hz",
+      "max_absolute_error": 2.4424906541753444e-15,
+      "limit": 1e-10,
+      "scope": "",
+      "passed": true
+    },
+    {
+      "name": "EQ at 192000 Hz",
+      "max_absolute_error": 8.798517470154366e-15,
+      "limit": 1e-10,
+      "scope": "",
+      "passed": true
+    },
+    {
+      "name": "SVF band-pass",
+      "max_absolute_error": 2.0122792321330962e-16,
+      "limit": 1e-10,
+      "scope": "",
+      "passed": true
+    },
+    {
+      "name": "Feedback delay",
+      "max_absolute_error": 0.0,
+      "limit": 1e-14,
+      "scope": "",
+      "passed": true
+    },
+    {
+      "name": "Zero-depth chorus",
+      "max_absolute_error": 6.034062138837726e-14,
+      "limit": 1e-12,
+      "scope": "",
+      "passed": true
+    },
+    {
+      "name": "Through-zero matched paths",
+      "max_absolute_error": 0.0,
+      "limit": 1e-14,
+      "scope": "",
+      "passed": true
+    },
+    {
+      "name": "Tremolo gain law",
+      "max_absolute_error": 7.216449660063518e-16,
+      "limit": 1e-13,
+      "scope": "",
+      "passed": true
+    },
+    {
+      "name": "Ring multiplication",
+      "max_absolute_error": 4.578282197797989e-14,
+      "limit": 1e-12,
+      "scope": "",
+      "passed": true
+    },
+    {
+      "name": "BBD clock arrival",
+      "max_absolute_error": 0.0,
+      "limit": 0,
+      "scope": "Discrete clock convention, event at end of audio sample",
+      "passed": true
+    },
+    {
+      "name": "Partitioned convolution 1 taps",
+      "max_absolute_error": 8.673617379884035e-19,
+      "limit": 1e-12,
+      "scope": "",
+      "passed": true
+    },
+    {
+      "name": "Partitioned convolution 127 taps",
+      "max_absolute_error": 5.551115123125783e-17,
+      "limit": 1e-12,
+      "scope": "",
+      "passed": true
+    },
+    {
+      "name": "Partitioned convolution 128 taps",
+      "max_absolute_error": 8.326672684688674e-17,
+      "limit": 1e-12,
+      "scope": "",
+      "passed": true
+    },
+    {
+      "name": "Partitioned convolution 129 taps",
+      "max_absolute_error": 5.984795992119984e-17,
+      "limit": 1e-12,
+      "scope": "",
+      "passed": true
+    },
+    {
+      "name": "Partitioned convolution 301 taps",
+      "max_absolute_error": 8.326672684688674e-17,
+      "limit": 1e-12,
+      "scope": "",
+      "passed": true
+    },
+    {
+      "name": "Partitioned convolution 1027 taps",
+      "max_absolute_error": 1.5959455978986625e-16,
+      "limit": 1e-12,
+      "scope": "",
+      "passed": true
+    },
+    {
+      "name": "Streaming STFT identity and tail",
+      "max_absolute_error": 1.1102230246251565e-16,
+      "limit": 1e-12,
+      "scope": "",
+      "passed": true
+    },
+    {
+      "name": "Unity-ratio spectral pitch",
+      "max_absolute_error": 0.0,
+      "limit": 1e-12,
+      "scope": "",
+      "passed": true
+    },
+    {
+      "name": "Implicit diode versus Brent",
+      "max_absolute_error": 1.0485669485471583e-09,
+      "limit": 2e-09,
+      "scope": "",
+      "passed": true
+    },
+    {
+      "name": "Diode with 2x filtered oversampling",
+      "max_absolute_error": 5.307155687139797e-10,
+      "limit": 3e-09,
+      "scope": "",
+      "passed": true
+    },
+    {
+      "name": "Diode with 4x filtered oversampling",
+      "max_absolute_error": 2.8970323362464967e-10,
+      "limit": 3e-09,
+      "scope": "",
+      "passed": true
+    },
+    {
+      "name": "Diode with 8x filtered oversampling",
+      "max_absolute_error": 2.548662669799029e-10,
+      "limit": 3e-09,
+      "scope": "",
+      "passed": true
+    },
+    {
+      "name": "Physical speaker exact ZOH",
+      "max_absolute_error": 6.136584296267955e-17,
+      "limit": 1e-10,
+      "scope": "",
+      "passed": true
+    },
+    {
+      "name": "Physical plate closed-form modes",
+      "max_absolute_error": 1.2465668688260712e-14,
+      "limit": 2e-09,
+      "scope": "64 simply supported modes, physical modal mass, held force input",
+      "passed": true
+    },
+    {
+      "name": "Compressor settled static gain",
+      "max_absolute_error": 5.10702591327572e-15,
+      "limit": 1e-09,
+      "scope": "",
+      "passed": true
+    },
+    {
+      "name": "Hilbert unwanted sideband",
+      "observed_db": -70.6741250209454,
+      "maximum_db": -35,
+      "passed": true
+    },
+    {
+      "name": "Pitch ratio +12 semitones",
+      "max_absolute_error": 0.0,
+      "limit": 2,
+      "scope": "",
+      "passed": true
+    },
+    {
+      "name": "Pitch ratio -12 semitones",
+      "max_absolute_error": 0.0,
+      "limit": 2,
+      "scope": "",
+      "passed": true
+    }
+  ]
+}

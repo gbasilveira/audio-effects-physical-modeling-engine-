@@ -1,0 +1,239 @@
+{
+  "sample_rate": 48000,
+  "channels": 2,
+  "block": 128,
+  "blocks_per_family": 1024,
+  "measurements": [
+    {
+      "family": "delay",
+      "median_us": 5.955,
+      "p99_us": 20.259,
+      "maximum_us": 122.59,
+      "median_realtime_fraction": 0.00223313
+    },
+    {
+      "family": "tape",
+      "median_us": 10.641,
+      "p99_us": 40.632,
+      "maximum_us": 118.061,
+      "median_realtime_fraction": 0.00399037
+    },
+    {
+      "family": "bbd",
+      "median_us": 7.795,
+      "p99_us": 22.915,
+      "maximum_us": 99.055,
+      "median_realtime_fraction": 0.00292312
+    },
+    {
+      "family": "flanger",
+      "median_us": 7.92,
+      "p99_us": 26.715,
+      "maximum_us": 87.943,
+      "median_realtime_fraction": 0.00297
+    },
+    {
+      "family": "chorus",
+      "median_us": 18.815,
+      "p99_us": 86.606,
+      "maximum_us": 287.126,
+      "median_realtime_fraction": 0.00705563
+    },
+    {
+      "family": "phaser",
+      "median_us": 12.595,
+      "p99_us": 346.611,
+      "maximum_us": 2018.4,
+      "median_realtime_fraction": 0.00472313
+    },
+    {
+      "family": "tremolo",
+      "median_us": 4.581,
+      "p99_us": 9.436,
+      "maximum_us": 101.33,
+      "median_realtime_fraction": 0.00171788
+    },
+    {
+      "family": "ring",
+      "median_us": 7.036,
+      "p99_us": 56.932,
+      "maximum_us": 221.657,
+      "median_realtime_fraction": 0.0026385
+    },
+    {
+      "family": "frequency-shift",
+      "median_us": 26.995,
+      "p99_us": 100.652,
+      "maximum_us": 802.811,
+      "median_realtime_fraction": 0.0101231
+    },
+    {
+      "family": "eq",
+      "median_us": 4.886,
+      "p99_us": 20.456,
+      "maximum_us": 96.272,
+      "median_realtime_fraction": 0.00183225
+    },
+    {
+      "family": "wah",
+      "median_us": 8.62,
+      "p99_us": 39.047,
+      "maximum_us": 476.351,
+      "median_realtime_fraction": 0.0032325
+    },
+    {
+      "family": "compressor",
+      "median_us": 14.384,
+      "p99_us": 156.218,
+      "maximum_us": 998.266,
+      "median_realtime_fraction": 0.005394
+    },
+    {
+      "family": "optical",
+      "median_us": 10.03,
+      "p99_us": 53.959,
+      "maximum_us": 146.052,
+      "median_realtime_fraction": 0.00376125
+    },
+    {
+      "family": "vca",
+      "median_us": 8.8,
+      "p99_us": 147.121,
+      "maximum_us": 1693.31,
+      "median_realtime_fraction": 0.0033
+    },
+    {
+      "family": "transient",
+      "median_us": 16.151,
+      "p99_us": 84.845,
+      "maximum_us": 183.081,
+      "median_realtime_fraction": 0.00605663
+    },
+    {
+      "family": "diode",
+      "median_us": 37.284,
+      "p99_us": 327.656,
+      "maximum_us": 1556.74,
+      "median_realtime_fraction": 0.0139815
+    },
+    {
+      "family": "amplifier",
+      "median_us": 23.342,
+      "p99_us": 429.338,
+      "maximum_us": 1562.97,
+      "median_realtime_fraction": 0.00875325
+    },
+    {
+      "family": "speaker",
+      "median_us": 4.937,
+      "p99_us": 37.116,
+      "maximum_us": 1213.44,
+      "median_realtime_fraction": 0.00185138
+    },
+    {
+      "family": "fdn",
+      "median_us": 13.488,
+      "p99_us": 134.846,
+      "maximum_us": 1823.01,
+      "median_realtime_fraction": 0.005058
+    },
+    {
+      "family": "convolution",
+      "median_us": 21.98,
+      "p99_us": 194.426,
+      "maximum_us": 472.971,
+      "median_realtime_fraction": 0.0082425
+    },
+    {
+      "family": "room",
+      "median_us": 47.837,
+      "p99_us": 120.124,
+      "maximum_us": 203.917,
+      "median_realtime_fraction": 0.0179389
+    },
+    {
+      "family": "plate",
+      "median_us": 37.013,
+      "p99_us": 190.579,
+      "maximum_us": 532.76,
+      "median_realtime_fraction": 0.0138799
+    },
+    {
+      "family": "spring",
+      "median_us": 18.299,
+      "p99_us": 150.647,
+      "maximum_us": 1325.82,
+      "median_realtime_fraction": 0.00686213
+    },
+    {
+      "family": "spatial",
+      "median_us": 12.708,
+      "p99_us": 48.541,
+      "maximum_us": 131.288,
+      "median_realtime_fraction": 0.0047655
+    },
+    {
+      "family": "pitch",
+      "median_us": 141.739,
+      "p99_us": 717.524,
+      "maximum_us": 4347.91,
+      "median_realtime_fraction": 0.0531521
+    },
+    {
+      "family": "granular",
+      "median_us": 18.738,
+      "p99_us": 62.669,
+      "maximum_us": 158.469,
+      "median_realtime_fraction": 0.00702675
+    },
+    {
+      "family": "vocoder",
+      "median_us": 50.774,
+      "p99_us": 304.652,
+      "maximum_us": 1818.98,
+      "median_realtime_fraction": 0.0190403
+    },
+    {
+      "family": "spectral",
+      "median_us": 45.478,
+      "p99_us": 1282.73,
+      "maximum_us": 4097.12,
+      "median_realtime_fraction": 0.0170542
+    },
+    {
+      "family": "crusher",
+      "median_us": 3.92,
+      "p99_us": 31.947,
+      "maximum_us": 141.55,
+      "median_realtime_fraction": 0.00147
+    },
+    {
+      "family": "resonator",
+      "median_us": 45.867,
+      "p99_us": 121.393,
+      "maximum_us": 505.621,
+      "median_realtime_fraction": 0.0172001
+    },
+    {
+      "family": "restoration",
+      "median_us": 62.727,
+      "p99_us": 213.474,
+      "maximum_us": 425.442,
+      "median_realtime_fraction": 0.0235226
+    },
+    {
+      "family": "multi-fx",
+      "median_us": 51.278,
+      "p99_us": 326.004,
+      "maximum_us": 2254.21,
+      "median_realtime_fraction": 0.0192292
+    }
+  ],
+  "environment": {
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+    "machine": "x86_64",
+    "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+    "build": "CMake Release",
+    "limits": "shared container, default models, no scheduling isolation"
+  }
+}

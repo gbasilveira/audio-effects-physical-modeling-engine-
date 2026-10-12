@@ -1,0 +1,264 @@
+{
+  "status": "passed",
+  "families": 32,
+  "signal": "music",
+  "duration_seconds": 2,
+  "results": [
+    {
+      "family": "delay",
+      "samples": 96000,
+      "sample_rate": 48000,
+      "latency_samples": 0,
+      "peak": 0.436121,
+      "solver_failures": 0
+    },
+    {
+      "family": "tape",
+      "samples": 96000,
+      "sample_rate": 48000,
+      "latency_samples": 0,
+      "peak": 0.379337,
+      "solver_failures": 0
+    },
+    {
+      "family": "bbd",
+      "samples": 96000,
+      "sample_rate": 48000,
+      "latency_samples": 0,
+      "peak": 0.314098,
+      "solver_failures": 0
+    },
+    {
+      "family": "flanger",
+      "samples": 96000,
+      "sample_rate": 48000,
+      "latency_samples": 960,
+      "peak": 0.455219,
+      "solver_failures": 0
+    },
+    {
+      "family": "chorus",
+      "samples": 96000,
+      "sample_rate": 48000,
+      "latency_samples": 0,
+      "peak": 0.259222,
+      "solver_failures": 0
+    },
+    {
+      "family": "phaser",
+      "samples": 96000,
+      "sample_rate": 48000,
+      "latency_samples": 0,
+      "peak": 0.547959,
+      "solver_failures": 0
+    },
+    {
+      "family": "tremolo",
+      "samples": 96000,
+      "sample_rate": 48000,
+      "latency_samples": 0,
+      "peak": 0.416833,
+      "solver_failures": 0
+    },
+    {
+      "family": "ring",
+      "samples": 96000,
+      "sample_rate": 48000,
+      "latency_samples": 0,
+      "peak": 0.416833,
+      "solver_failures": 0
+    },
+    {
+      "family": "frequency-shift",
+      "samples": 96000,
+      "sample_rate": 48000,
+      "latency_samples": 31,
+      "peak": 0.404282,
+      "solver_failures": 0
+    },
+    {
+      "family": "eq",
+      "samples": 96000,
+      "sample_rate": 48000,
+      "latency_samples": 0,
+      "peak": 0.416833,
+      "solver_failures": 0
+    },
+    {
+      "family": "wah",
+      "samples": 96000,
+      "sample_rate": 48000,
+      "latency_samples": 0,
+      "peak": 0.191544,
+      "solver_failures": 0
+    },
+    {
+      "family": "compressor",
+      "samples": 96000,
+      "sample_rate": 48000,
+      "latency_samples": 0,
+      "peak": 0.416833,
+      "solver_failures": 0
+    },
+    {
+      "family": "optical",
+      "samples": 96000,
+      "sample_rate": 48000,
+      "latency_samples": 0,
+      "peak": 0.407245,
+      "solver_failures": 0
+    },
+    {
+      "family": "vca",
+      "samples": 96000,
+      "sample_rate": 48000,
+      "latency_samples": 0,
+      "peak": 0.380133,
+      "solver_failures": 0
+    },
+    {
+      "family": "transient",
+      "samples": 96000,
+      "sample_rate": 48000,
+      "latency_samples": 0,
+      "peak": 1.64408,
+      "solver_failures": 0
+    },
+    {
+      "family": "diode",
+      "samples": 96000,
+      "sample_rate": 48000,
+      "latency_samples": 0,
+      "peak": 0.285818,
+      "solver_failures": 0
+    },
+    {
+      "family": "amplifier",
+      "samples": 96000,
+      "sample_rate": 48000,
+      "latency_samples": 0,
+      "peak": 0.544599,
+      "solver_failures": 0
+    },
+    {
+      "family": "speaker",
+      "samples": 96000,
+      "sample_rate": 48000,
+      "latency_samples": 0,
+      "peak": 0.0251626,
+      "solver_failures": 0
+    },
+    {
+      "family": "fdn",
+      "samples": 96000,
+      "sample_rate": 48000,
+      "latency_samples": 0,
+      "peak": 0.210222,
+      "solver_failures": 0
+    },
+    {
+      "family": "convolution",
+      "samples": 96000,
+      "sample_rate": 48000,
+      "latency_samples": 128,
+      "peak": 0.416833,
+      "solver_failures": 0
+    },
+    {
+      "family": "room",
+      "samples": 96000,
+      "sample_rate": 48000,
+      "latency_samples": 0,
+      "peak": 0.27457,
+      "solver_failures": 0
+    },
+    {
+      "family": "plate",
+      "samples": 96000,
+      "sample_rate": 48000,
+      "latency_samples": 0,
+      "peak": 0.0959492,
+      "solver_failures": 0
+    },
+    {
+      "family": "spring",
+      "samples": 96000,
+      "sample_rate": 48000,
+      "latency_samples": 0,
+      "peak": 0.476751,
+      "solver_failures": 0
+    },
+    {
+      "family": "spatial",
+      "samples": 96000,
+      "sample_rate": 48000,
+      "latency_samples": 0,
+      "peak": 0.529693,
+      "solver_failures": 0
+    },
+    {
+      "family": "pitch",
+      "samples": 96000,
+      "sample_rate": 48000,
+      "latency_samples": 1024,
+      "peak": 0.416833,
+      "solver_failures": 0
+    },
+    {
+      "family": "granular",
+      "samples": 96000,
+      "sample_rate": 48000,
+      "latency_samples": 0,
+      "peak": 0.369863,
+      "solver_failures": 0
+    },
+    {
+      "family": "vocoder",
+      "samples": 96000,
+      "sample_rate": 48000,
+      "latency_samples": 0,
+      "peak": 0.26275,
+      "solver_failures": 0
+    },
+    {
+      "family": "spectral",
+      "samples": 96000,
+      "sample_rate": 48000,
+      "latency_samples": 256,
+      "peak": 0.416833,
+      "solver_failures": 0
+    },
+    {
+      "family": "crusher",
+      "samples": 96000,
+      "sample_rate": 48000,
+      "latency_samples": 0,
+      "peak": 0.257812,
+      "solver_failures": 0
+    },
+    {
+      "family": "resonator",
+      "samples": 96000,
+      "sample_rate": 48000,
+      "latency_samples": 0,
+      "peak": 0.115324,
+      "solver_failures": 0
+    },
+    {
+      "family": "restoration",
+      "samples": 96000,
+      "sample_rate": 48000,
+      "latency_samples": 256,
+      "peak": 0.374594,
+      "solver_failures": 0
+    },
+    {
+      "family": "multi-fx",
+      "samples": 96000,
+      "sample_rate": 48000,
+      "latency_samples": 0,
+      "peak": 0.288864,
+      "solver_failures": 0
+    }
+  ]
+}
